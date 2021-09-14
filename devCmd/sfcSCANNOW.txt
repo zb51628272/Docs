@@ -1,0 +1,11 @@
+C:\Windows\system32>sfc /SCANNOW
+
+开始系统扫描。此过程将需要一些时间。
+
+开始系统扫描的验证阶段。
+验证 100% 已 完 成 。
+
+Windows 资源保护找到了损坏文件，但其中有一些文件无法修复。
+对于联机修复，位于 windir\Logs\CBS\CBS.log 的 CBS 日志文件中
+有详细信息。例如 C:\Windows\Logs\CBS\CBS.log。对于脱机修复，
+/OFFLOGFILE 标记提供的日志文件中有详细信息。

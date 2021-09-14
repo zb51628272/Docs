@@ -1,0 +1,18 @@
+﻿mysqldump --column-statistics=0 -h192.168.2.60 -uroot -p uc-51 > D:\soft\uc-dev.sql
+
+mysqldump --column-statistics=0 -h192.168.2.74 -uuc -p uc < D:\soft\uc-dev.sql
+
+mysqldump --column-statistics=0 -h192.168.2.60 -uroot -pasdf@123 uc-51 | mysql -h192.168.2.74 -uuc -pab12!@ uc
+
+mysqldump --column-statistics=0 -h192.168.2.60 -uroot -pasdf@123 cims-51 | mysql -h192.168.2.60 -uroot -pasdf@123 yy_cims
+
+mysqldump --column-statistics=0 –-default-character-set=utf8 -h192.168.2.60 -uroot -pasdf@123 yy_cims | mysql –-default-character-set=utf8 -h192.168.2.60 -uroot -pasdf@123 jszx_cims
+
+mysqldump --column-statistics=0 –-default-character-set=utf8 -h192.168.2.60 -uroot -pasdf@123 -n -d -t -R yy_cims | mysql –-default-character-set=utf8 -h192.168.2.60 -uroot -pasdf@123 jszx_cims
+
+mysql -h192.168.2.60 -uroot -pasdf@123 -e "SET GLOBAL net_write_timeout=300; SET GLOBAL max_allowed_packet=1024*1024*1024;"
+
+mysqldump --column-statistics=0 –-default-character-set=utf8 -h192.168.2.60 -uroot -pasdf@123 -n -d -t -R --triggers=false jszx_cims | mysql –-default-character-set=utf8 -h192.168.2.60 -uroot -pasdf@123 temp_cims
+
+mysqldump --column-statistics=0 –-default-character-set=utf8 -h192.168.2.74 -uroot -pasdf@123 -n -d -t -R --triggers=false cims | mysql –-default-character-set=utf8 -h192.168.2.74 -uroot -pasdf@123 cimsbak
+ 

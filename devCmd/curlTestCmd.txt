@@ -1,0 +1,5 @@
+Upload Photo:
+curl -i -X POST -H "Content-Type: multipart/form-data" -F "file=@D:\\devTest\\temp\\Test.png" https://localhost:44393/api/Account/UploadPhoto/1
+
+Upload Excel:
+curl -i -X POST -H "Content-Type: multipart/form-data" -F "file=@D:\\devTest\\temp\\Test.xlsx" https://localhost:44393/api/Account/BatchImport
