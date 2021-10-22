@@ -16,8 +16,10 @@
 1. Navicat
 2. DBCHM(https://gitee.com/lztkdr/DBCHM)
 3. TableGo(http://www.tablego.cn/)
-## 5. IP &DNS
+## 5. IP & DNS
 1. SwitchHosts
+2. Fiddler
+3. DevSidecar
 ## 6. Redis
 1. RedisDesktopManager
 ## 7. Code Management
